@@ -1,9 +1,11 @@
 import '../assets/css/Homepage.scss'
+import Navbar from '../components/Navbar';
 
 function Homepage() {
   return (
     <div>
-      <p>HOMEPAGE</p>
+        <Navbar />
+        <p>HOMEPAGE</p>
     </div>
   );
 }
