@@ -54,7 +54,7 @@ const ThreeBuilding = () => {
     };
   }, []);
 
-  return <div ref={mountRef} />;
+  return <div ref={mountRef} className='homepage-planets' />;
 };
 
 export default ThreeBuilding;
