@@ -1,17 +1,21 @@
 import React from 'react';
 import {Routes, BrowserRouter as Router, Route} from 'react-router-dom';
-import Homepage from './pages/Homepage';
-import Navbar from './components/Navbar';
+import Homepage from './components/pages/Homepage';
+import Navbar from './components/common/Navbar';
 import './index.scss'
+import ThemeProvider from './contexts/ThemeContext';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-        <Routes>
-          <Route path='/' element={<Homepage />}/>
-        </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Navbar />
+          <Routes>
+            <Route path='/' element={<Homepage />}/>
+          </Routes>
+      </Router>      
+    </ThemeProvider>
+
   );
 }
 

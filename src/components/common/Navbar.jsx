@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import DarkModeBtn from './subcomponents/DarkModeBtn';
+import DarkModeBtn from '../subcomponents/DarkModeBtn';
 
 function Navbar() {
     return (

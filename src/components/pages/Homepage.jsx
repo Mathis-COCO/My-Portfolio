@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import ThreeBuilding from '../components/ThreeArt';
+import ThreeBuilding from '../common/ThreeArt';
 
 function Homepage() {
     const welcome = 'welcome to my portfolio'

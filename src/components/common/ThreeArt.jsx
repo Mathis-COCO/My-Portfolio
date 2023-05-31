@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import earthTextureDay from '../assets/img/earth_texture.jpg';
-import earthTextureNight from '../assets/img/earth_texture_night.jpg';
-import moonTexture from '../assets/img/moon_texture.jpg';
+import earthTextureDay from '../../assets/img/earth_texture.jpg';
+import earthTextureNight from '../../assets/img/earth_texture_night.jpg';
+import moonTexture from '../../assets/img/moon_texture.jpg';
 
 const ThreeBuilding = () => {
   const mountRef = useRef(null);
