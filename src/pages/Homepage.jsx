@@ -14,8 +14,8 @@ function Homepage() {
       }, []);
 
     return (
-        <div>
-            <div className="homepage-main">
+        <div className='homepage-main'>
+            <div className='homepage-main'>
                 <ThreeBuilding className='homepage-planets' />
                 <p className='homepage-text h-text-1'>mathis coco</p>
                 <h2 className='homepage-text h-text-2'>{welcome}</h2>
