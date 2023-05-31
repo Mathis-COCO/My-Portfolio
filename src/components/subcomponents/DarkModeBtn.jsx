@@ -6,7 +6,6 @@ function DarkModeBtn() {
 
     const handleDarkModeToggle = () => {
       appTheme === 'Light' ? setAppTheme('Dark') : setAppTheme('Light');
-      console.log(appTheme);
       document.body.classList.toggle('dark-mode');
     };
 

@@ -15,11 +15,9 @@ function Homepage() {
 
     return (
         <div className='homepage-main'>
-            <div className='homepage-main'>
-                <ThreeBuilding className='homepage-planets' />
-                <p className='homepage-text h-text-1'>mathis coco</p>
-                <h2 className='homepage-text h-text-2'>{welcome}</h2>
-            </div>
+            <p className='homepage-text h-text-1'>mathis coco</p>
+            <h2 className='homepage-text h-text-2'>{welcome}</h2>
+            <ThreeBuilding className='homepage-planets' />
         </div>
     );
 }

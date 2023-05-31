@@ -1,21 +1,32 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useContext } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import earthTextureDay from '../../assets/img/earth_texture.jpg';
 import earthTextureNight from '../../assets/img/earth_texture_night.jpg';
 import moonTexture from '../../assets/img/moon_texture.jpg';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 const ThreeBuilding = () => {
   const mountRef = useRef(null);
   const [currEarthTexture, setEarthTexture] = useState(earthTextureDay);
-  
+  const [appTheme] = useContext(ThemeContext);
+
+  useEffect(() => {
+    const themeTextures = {
+      Light: earthTextureDay,
+      Dark: earthTextureNight
+    };
+
+    setEarthTexture(themeTextures[appTheme]);
+  }, [appTheme]);
+
   function NightDayMode() {
-    setEarthTexture((prevTexture) => {
-        if (prevTexture === earthTextureDay) {
-          return earthTextureNight;
-        } else {
-          return earthTextureDay;
-        }
+    setEarthTexture(prevTexture => {
+      if (prevTexture === earthTextureDay) {
+        return earthTextureNight;
+      } else {
+        return earthTextureDay;
+      }
     });
   }
 
