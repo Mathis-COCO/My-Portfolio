@@ -1,7 +1,17 @@
+import { useEffect } from 'react';
 import ThreeBuilding from '../components/ThreeArt';
 
 function Homepage() {
     const welcome = 'welcome to my portfolio'
+
+    useEffect(() => {
+        setTimeout(() => {
+            const planets = document.querySelector('.homepage-planets');
+            if (planets) {
+                planets.classList.add('fade-in');
+            }
+        }, 100);
+      }, []);
 
     return (
         <div>
