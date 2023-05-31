@@ -8,8 +8,8 @@ function Navbar() {
                 <img src="" alt="Portfolio Logo" />
             </div>
             <div className="navbar-right-container">
-                <Link className='navbar-right-txt'>projects</Link>
-                <Link className='navbar-right-txt'>me</Link>
+                <Link to={'/'} className='navbar-right-txt'>projects</Link>
+                <Link to={'/'} className='navbar-right-txt'>me</Link>
             </div>
         </div>
     );

@@ -9,11 +9,13 @@
       background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    z-index: 1;
 }
 
 .homepage-planets {
     position: absolute;
-    background-color: rgb(1, 9, 28);
+    z-index: 10;
+    background-color: transparent;
 }
 
 .h-text-1 {
@@ -21,6 +23,7 @@
     text-transform: uppercase;
     top: 20vh;
     left: 50%;
+    z-index: 11;
     transform: translate(-50%, -50%);
 }
 
