@@ -1,4 +1,3 @@
-import '../assets/css/Homepage.scss'
 import ThreeBuilding from '../components/ThreeArt';
 
 function Homepage() {

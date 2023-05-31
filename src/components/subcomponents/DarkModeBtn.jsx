@@ -1,5 +1,3 @@
-import '../assets/css/components/subcomponents/DarkModeBtn.scss'
-
 function DarkModeBtn() {
     return (
         <div>
