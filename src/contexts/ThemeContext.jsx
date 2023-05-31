@@ -4,21 +4,20 @@ export const ThemeContext = createContext('Light');
 
 const ThemeProvider = props => {
   const [appTheme, setAppTheme] = useState('Light');
-  const [theme, setTheme] = useState(['White', 'Black']);
+
   const styles = {
     mainPage: {
-      backgroundColor: theme[0],
-      color: theme[1],
+      backgroundColor: appTheme === 'Light' ? 'White' : 'Black',
+      color: appTheme === 'Light' ? 'Black' : 'White',
     }
-  }
+  };
 
   useEffect(() => {
-    appTheme === 'Light' ? setTheme(['White', 'Black']) : setTheme(['Black', 'White'])
-    console.log(theme)
-  }, [appTheme])
+    console.log(styles);
+  }, [appTheme]);
 
   return (
-    <ThemeContext.Provider value={[ appTheme, setAppTheme ]}>
+    <ThemeContext.Provider value={[appTheme, setAppTheme]}>
       <div style={styles.mainPage}>
         {props.children}
       </div>

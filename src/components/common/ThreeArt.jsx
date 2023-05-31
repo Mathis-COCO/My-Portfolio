@@ -52,7 +52,7 @@ const ThreeBuilding = () => {
     mainSphere.add(secondarySphere);
 
     // Position de la sphère secondaire par rapport à la sphère principale
-    secondarySphere.position.x = 2; // Modifier les valeurs x, y, z pour ajuster la position
+    secondarySphere.position.x = -4;
 
     camera.position.z = 5;
 
