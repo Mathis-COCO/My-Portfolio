@@ -1,0 +1,46 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.homepageMain {
+    background-color: rgb(1, 9, 28);
+}
+
+.homepageText {
+    position: absolute;
+    font-weight: 800;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    animation: fadeIn 3s;
+}
+
+.homepagePlanets {
+    position: absolute;
+    z-index: 10;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 5s ease 0.5s;
+}
+
+.homepage-planets.fade-in {
+    opacity: 1;
+}
+
+p {
+    font-size: 200px;
+    text-transform: uppercase;
+    top: 20vh;
+    left: 50%;
+    z-index: 11;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-size: 7.2em;
+    top: 30vh;
+    left: 27%;
+}
