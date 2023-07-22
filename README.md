@@ -6,7 +6,7 @@ I'm currently using ThreeJS for 3d models and plan to add more cool stuff in the
 
 Here are some pics of my current advancement in this project:
 
-![Homepage Preview Image](./src/assets/img/readme/preview-1.png)
+![Homepage Preview Image](./src/assets/images/readme/preview-1.png)
 
 
 # Getting Started with Create React App
